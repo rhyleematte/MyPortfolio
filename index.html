@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Advanced Task Manager</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+    
+    <header>
+        <h1>📝 Task Manager</h1>
+        <p>Stay organized and productive!</p>
+        <button id="themeToggle" class="theme-toggle">🌙</button>
+    </header>
+
+    <!-- Input Section -->
+    <section class="task-input-section">
+        <div class="input-group">
+            <input type="text" id="taskInput" placeholder="Enter a new task..." maxlength="100">
+            <button id="addTaskBtn">
+                <span>Add Task</span>
+                <span>+</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- Stats -->
+    <section class="task-stats">
+        <div class="stat">
+            <span id="totalTasks" class="stat-number">0</span>
+            <span class="stat-label">Total</span>
+        </div>
+        <div class="stat">
+            <span id="completedTasks" class="stat-number">0</span>
+            <span class="stat-label">Completed</span>
+        </div>
+        <div class="stat">
+            <span id="pendingTasks" class="stat-number">0</span>
+            <span class="stat-label">Pending</span>
+        </div>
+    </section>
+
+    <!-- Progress Bar -->
+    <div class="progress-bar">
+        <div id="progressFill"></div>
+    </div>
+
+    <!-- Filter Buttons -->
+    <section class="filter-section">
+        <button class="filter-btn active">All</button>
+        <button class="filter-btn">Pending</button>
+        <button class="filter-btn">Completed</button>
+    </section>
+
+    <!-- Tasks -->
+    <section class="tasks-container">
+        <ul id="tasksList" class="tasks-list"></ul>
+
+        <div id="emptyState" class="empty-state">
+            <div class="empty-icon">📋</div>
+            <h3>No tasks yet</h3>
+            <p>Add your first task to get started!</p>
+        </div>
+    </section>
+
+    <!-- Clear -->
+    <section class="actions-section">
+        <button id="clearCompletedBtn" class="clear-btn">
+            Clear Completed
+        </button>
+    </section>
+
+</div>
+
+<!-- Toast -->
+<div id="toast" class="toast">Task Added ✅</div>
+
+<script src="script.js"></script>
+</body>
+</html>
