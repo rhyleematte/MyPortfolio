@@ -1,0 +1,82 @@
+const PROJECT_SAMPLES = {
+    "daloy-api": {
+        title: "Daloy API",
+        category: "Infrastructure",
+        body: "Sample preview: stream-oriented logistics API with idempotent webhooks, rate limits, and traceable job pipelines for third-party integrators.",
+        highlights: [
+            "Versioned REST + async webhooks",
+            "Backpressure-aware stream consumers",
+            "OpenAPI specs and sandbox keys",
+        ],
+        image: null,
+        demoUrl: null,
+        pdfUrl: "assets/daloy.pdf",
+    },
+    askdocph: {
+        title: "AskDocPH",
+        category: "Healthcare",
+        body: "Sample preview: encrypted consult rooms, appointment lifecycle, and provider routing tuned for Philippine clinics and telehealth compliance workflows.",
+        highlights: [
+            "End-to-end encrypted sessions",
+            "Role-based access for staff and patients",
+            "WebSocket-driven waiting-room state",
+        ],
+        image:
+            "https://lh3.googleusercontent.com/aida-public/AB6AXuDNetr2nOTx5-nv6eD31643Qjum-C0bZ_0cZEqPue_Y5STlp4c5ZgBBM5OcjfGMdndeytPRa5BJBY4qveRnfKb3CFhHYglQQ3xqAWNfLlCIIPRHQppqOfdYFtjRdP27XViU23_-4BKhLtKt8yocUifA7pEVrSAuzGXPy-VdDpZyxKknVi2-SiAJi7JNR0WcxuE6A1xrCKCvYxlNNyO3S7leqmP2_Nro3d4dfkPg8Ah47FLmJ9WDslvN9rr92v2QS9gLMfr_hS7-59w",
+        imageAlt: "Telemedicine interface sample",
+        demoUrl: null,
+        pdfUrl: "assets/askdocph.pdf",
+    },
+    "qr-pos": {
+        title: "QR-Based POS",
+        category: "Fintech",
+        body: "Sample preview: merchant tablet flow with dynamic QR issuance, payment status polling, and receipt generation for contactless checkout.",
+        highlights: [
+            "Per-transaction rotating QR payloads",
+            "Ledger reconciliation exports",
+            "Low-connectivity store mode",
+        ],
+        image: null,
+        demoUrl: null,
+        pdfUrl: "assets/qr-based-pos.pdf",
+    },
+    nexgen: {
+        title: "Nexgen",
+        category: "Performance",
+        body: "Sample preview: internal design system and starter kits that cut prototype time—story-driven components, tokens, and CI visual checks.",
+        highlights: [
+            "Composable UI primitives",
+            "40% faster delivery on pilot squads",
+            "Shared performance budgets in CI",
+        ],
+        image: null,
+        demoUrl: null,
+        pdfUrl: "assets/nexgen.pdf",
+    },
+    zylo: {
+        title: "Zylo",
+        category: "Creative Tech",
+        body: "Sample preview: semantic feed ranking with explainable suggestions, user taste clusters, and safe content filters for publisher partners.",
+        highlights: [
+            "Embedding-based topic lanes",
+            "Behavioral re-ranking with guardrails",
+            "Editorial override and audit trails",
+        ],
+        image: null,
+        demoUrl: null,
+        pdfUrl: "assets/zylo.pdf",
+    },
+    gastronique: {
+        title: "Gastronique",
+        category: "E-Commerce",
+        body: "A premium online shop dedicated to culinary excellence, providing high-quality ingredients and tools for professional chefs and home cooks alike.",
+        highlights: [
+            "Curated culinary collection",
+            "Secure payment integration",
+            "Global shipping logistics",
+        ],
+        image: null,
+        demoUrl: null,
+        pdfUrl: "assets/gastronique.pdf",
+    },
+};

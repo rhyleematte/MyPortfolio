@@ -1,0 +1,28 @@
+{
+  "name": "myportfolio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Portfolio site build",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "build:css": "tailwindcss -c tailwind.config.js -i ./MyPortfolio/src/tailwind.css -o ./MyPortfolio/assets/tailwind.css --minify",
+    "watch:css": "tailwindcss -c tailwind.config.js -i ./MyPortfolio/src/tailwind.css -o ./MyPortfolio/assets/tailwind.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@tailwindcss/container-queries": "^0.1.1",
+    "@tailwindcss/forms": "^0.5.7",
+    "autoprefixer": "^10.4.19",
+    "postcss": "^8.4.38",
+    "tailwindcss": "^3.4.4",
+    "vite": "^8.0.8"
+  },
+  "dependencies": {
+    "@emailjs/browser": "^4.4.1"
+  }
+}
