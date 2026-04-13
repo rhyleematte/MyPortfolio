@@ -9,7 +9,7 @@ const PROJECT_SAMPLES = {
             "OpenAPI specs and sandbox keys",
         ],
         image: null,
-        demoUrl: null,
+        demoUrl: "https://daloy-api-production.up.railway.app/",
         pdfUrl: "assets/daloy.pdf",
     },
     askdocph: {
@@ -21,10 +21,9 @@ const PROJECT_SAMPLES = {
             "Role-based access for staff and patients",
             "WebSocket-driven waiting-room state",
         ],
-        image:
-            "https://lh3.googleusercontent.com/aida-public/AB6AXuDNetr2nOTx5-nv6eD31643Qjum-C0bZ_0cZEqPue_Y5STlp4c5ZgBBM5OcjfGMdndeytPRa5BJBY4qveRnfKb3CFhHYglQQ3xqAWNfLlCIIPRHQppqOfdYFtjRdP27XViU23_-4BKhLtKt8yocUifA7pEVrSAuzGXPy-VdDpZyxKknVi2-SiAJi7JNR0WcxuE6A1xrCKCvYxlNNyO3S7leqmP2_Nro3d4dfkPg8Ah47FLmJ9WDslvN9rr92v2QS9gLMfr_hS7-59w",
-        imageAlt: "Telemedicine interface sample",
-        demoUrl: null,
+        image: "assets/askdocph.jpg",
+        imageAlt: "AskDocPH Platform Interface",
+        demoUrl: "https://askdocph-production.up.railway.app/",
         pdfUrl: "assets/askdocph.pdf",
     },
     "qr-pos": {
@@ -37,7 +36,7 @@ const PROJECT_SAMPLES = {
             "Low-connectivity store mode",
         ],
         image: null,
-        demoUrl: null,
+        demoUrl: "https://qr-based-pos.vercel.app/",
         pdfUrl: "assets/qr-based-pos.pdf",
     },
     nexgen: {
@@ -50,7 +49,7 @@ const PROJECT_SAMPLES = {
             "Shared performance budgets in CI",
         ],
         image: null,
-        demoUrl: null,
+        demoUrl: "https://nexgen-tau-weld.vercel.app/",
         pdfUrl: "assets/nexgen.pdf",
     },
     zylo: {
@@ -63,7 +62,20 @@ const PROJECT_SAMPLES = {
             "Editorial override and audit trails",
         ],
         image: null,
-        demoUrl: null,
+        demoUrl: "https://zylo-nextgen.vercel.app/",
         pdfUrl: "assets/zylo.pdf",
+    },
+    gastronique: {
+        title: "Gastronique",
+        category: "E-Commerce",
+        body: "A premium online shop dedicated to culinary excellence, providing high-quality ingredients and tools for professionals.",
+        highlights: [
+            "Premium product catalog",
+            "Secure checkout flow",
+            "Chef-curated selections",
+        ],
+        image: null,
+        demoUrl: "https://gastronique-orcin.vercel.app/",
+        pdfUrl: "assets/gastronique.pdf",
     },
 };
