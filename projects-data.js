@@ -23,7 +23,7 @@ const PROJECT_SAMPLES = {
         ],
         image: "assets/askdocph.jpg",
         imageAlt: "AskDocPH Platform Interface",
-        demoUrl: "https://askdocph-production.up.railway.app/",
+        demoUrl: "https://askdocph-production-4dca.up.railway.app/",
         pdfUrl: "assets/askdocph.pdf",
     },
     "qr-pos": {
