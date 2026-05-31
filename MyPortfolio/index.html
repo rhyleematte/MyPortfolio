@@ -280,11 +280,11 @@
                     href="#insights" data-target="insights">Insights</a>
             </div>
             <div class="hidden md:flex items-center gap-6">
-                <button id="exportPdfBtn" type="button"
+                <a id="exportPdfBtn" href="assets/Edwin_Baslot_Resume.pdf" download="Edwin_Baslot_Resume.pdf"
                     class="flex items-center gap-2 text-slate-400 hover:text-slate-100 transition-colors duration-300 font-medium px-4 py-2 rounded-lg hover:bg-white/5">
                     <span class="material-symbols-outlined text-xl">picture_as_pdf</span>
                     <span>Export PDF</span>
-                </button>
+                </a>
                 <button id="navContactBtn" type="button"
                     class="bg-gradient-to-br from-primary to-primary-container text-on-primary px-8 py-2.5 rounded-xl font-medium hover:opacity-80 transition-all active:scale-95 duration-200">
                     Contact
@@ -852,49 +852,7 @@
         // Update on scroll
         window.addEventListener('scroll', updateActiveNavLink);
 
-        // PDF Export Logic
-        document.getElementById('exportPdfBtn').addEventListener('click', function () {
-            const element = document.querySelector('main');
-            const btn = this;
-            const originalBtnContent = btn.innerHTML;
-
-            // UI Feedback
-            btn.innerHTML = '<span class="material-symbols-outlined text-xl animate-spin">sync</span><span>Generating...</span>';
-            btn.disabled = true;
-
-            // Apply light mode for generation
-            document.body.classList.add('is-generating-pdf');
-
-            const opt = {
-                margin: [10, 10, 10, 10],
-                filename: 'Edwin_Baslot_Portfolio.pdf',
-                image: { type: 'jpeg', quality: 0.98 },
-                html2canvas: {
-                    scale: 2,
-                    useCORS: true,
-                    letterRendering: true,
-                    backgroundColor: '#0b1326',
-                    windowWidth: 1200, // Ensure consistent layout width
-                    logging: true // Enable logging for debugging
-                },
-                jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' },
-                pagebreak: { mode: ['avoid-all', 'css', 'legacy'] }
-            };
-
-            // Generate PDF
-            html2pdf().set(opt).from(element).save().then(() => {
-                // Restore UI
-                document.body.classList.remove('is-generating-pdf');
-                btn.innerHTML = originalBtnContent;
-                btn.disabled = false;
-            }).catch(err => {
-                console.error('PDF Generation error:', err);
-                document.body.classList.remove('is-generating-pdf');
-                btn.innerHTML = originalBtnContent;
-                btn.disabled = false;
-                alert('There was an error generating the PDF. Please try again.');
-            });
-        });
+        // PDF Export Logic removed: downloading static file instead
 
         // Initial update
         updateActiveNavLink();
